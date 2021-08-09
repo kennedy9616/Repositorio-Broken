@@ -34,6 +34,7 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
+    <link href="css/tabela.css" rel="stylesheet">
 
 </head>
 
@@ -111,9 +112,11 @@
                 <div class="section-header">
                     <h2>PARTICIONAMENTO POR CLASSE DE EQUIVALÊNCIA</h2>
                 </div>
-                
-                <img src="img/supporters/4.png" class="img-fluid" alt="">
-
+                <div>
+                    <center>
+                        <img src="img/banner/lixeiras.jpg" class="img-fluid" alt="">
+                    </center>
+                </div>
                 <p>
                     <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
                 </p>
@@ -137,91 +140,75 @@
                     </div>
                     <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
                     <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
-                   
-                            <style type="text/css">
-                            .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
-                            .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
-                              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-                            .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#fff;
-                              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                            .tg .tg-otuj{background-color:#c0c0c0;border-color:#000000;font-size:20px;text-align:center;vertical-align:top}
-                            .tg .tg-m6au{background-color:#c0c0c0;font-size:20px;text-align:center;vertical-align:top}
-                            .tg .tg-bizx{background-color:#4a63e6;border-color:#000000;color:#ffffff;font-size:20px;text-align:center;vertical-align:top}
-                            .tg .tg-rtwp{background-color:#c0c0c0;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
-                            .tg .tg-ge46{background-color:#efefef;font-size:20px;text-align:center;vertical-align:top}
-                            </style>
+
                             <div class="container">
-                                <div class="table-responsive">
                                     <table class="tg" width="70%;" align="center">
                                         <thead>
                                         <tr>
-                                            <th class="tg-bizx" style="font-weight:bold">Variáveis de Entrada</th>
-                                            <th class="tg-bizx" style="font-weight:bold">Classes de Equivalência Válidas</th>
-                                            <th class="tg-bizx" style="font-weight:bold">Classes de Equivalência Inválidas</th>
+                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td class="tg-otuj">Comprimento do ID</td>
-                                            <td class="tg-otuj">2 &lt;= Comprimento &lt;= 6</td>
-                                            <td class="tg-otuj">Comprimento &lt; 2 e Comprimento &gt; 6</td>
+                                            <td class="linhacinza">Comprimento do ID</td>
+                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
+                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
                                         </tr>
                                         <tr>
-                                            <td class="tg-ge46">ID inicia com uma letra</td>
-                                            <td class="tg-ge46">(letra) + (letra ou dígito)</td>
-                                            <td class="tg-ge46">(dígito) + (letra ou dígito)</td>
+                                            <td class="linhabranca">ID inicia com uma letra</td>
+                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
+                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
                                         </tr>
                                         <tr>
-                                            <td class="tg-otuj">ID contém letras e números</td>
-                                            <td class="tg-otuj">(letras e dígitos)</td>
-                                            <td class="tg-otuj">(apenas letras) ou (apenas dígitos)</td>
+                                            <td class="linhacinza">ID contém letras e números</td>
+                                            <td class="linhacinza">(letras e dígitos)</td>
+                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
                                         </tr>
                                         </tbody>
                                     </table>
-                                </div>
                             </div>
 
                     <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
 
                 
                 <div class="container">
-                    <div class="table-responsive">
                         
                         <table class="tg" width="70%;" align="center">
                             <thead>
                                 <tr>
-                                  <th class="tg-bizx" colspan="3"><span style="font-weight:bold">Roteiro de Testes: Validar Identificador</span></th>
+                                  <th class="titulo" colspan="3"><span style="font-weight:bold">Roteiro de Testes: Validar Identificador</span></th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td class="tg-rtwp">Caso de Teste</td>
-                                  <td class="tg-rtwp">Entrada</td>
-                                  <td class="tg-rtwp">Saída Esperada</td>
+                                  <td class="titulo">Caso de Teste</td>
+                                  <td class="titulo">Entrada</td>
+                                  <td class="titulo">Saída Esperada</td>
                                 </tr>
                                 <tr>
-                                  <td class="tg-ge46">CT-01</td>
-                                  <td class="tg-ge46">teste1</td>
-                                  <td class="tg-ge46">Indentificador Válido</td>
+                                  <td class="linhacinza">CT-01</td>
+                                  <td class="linhacinza">teste1</td>
+                                  <td class="linhacinza">Indentificador Válido</td>
                                 </tr>
                                 <tr>
-                                  <td class="tg-m6au">CT-02</td>
-                                  <td class="tg-m6au">a</td>
-                                  <td class="tg-m6au">Identificador Inválido</td>
+                                  <td class="linhabranca">CT-02</td>
+                                  <td class="linhabranca">a</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
                                 </tr>
                                 <tr>
-                                  <td class="tg-ge46">CT-03</td>
-                                  <td class="tg-ge46">3teste</td>
-                                  <td class="tg-ge46">Identificador Inválido</td>
+                                  <td class="linhacinza">CT-03</td>
+                                  <td class="linhacinza">3teste</td>
+                                  <td class="linhacinza">Identificador Inválido</td>
                                 </tr>
                                 <tr>
-                                  <td class="tg-m6au">CT-04</td>
-                                  <td class="tg-m6au">teste</td>
-                                  <td class="tg-m6au">Identificador Inválido</td>
+                                  <td class="linhabranca">CT-04</td>
+                                  <td class="linhabranca">teste</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
                                 </tr>
                               </tbody>
                             </table>
-                    </div>
                 </div>
 
                 <div class="section-header">
@@ -247,64 +234,189 @@
 
                 <p>Primeiramente, separamos as classes de equivalência, tanto para saque, quanto para saque, quanto para depósito: </p>
                 
-                <div class="container">
-                    <table class="tg" width="70%;" align="center">
+                <div id = "tabela">
+
+                    <table class="tg" width="45%;" align="center">
                         <thead>
                             <tr>
-                            <th class="tg-bizx" style="font-weight:bold" colspan="3">Método Saque</th>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Saque</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                            <td class="tg-bizx" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="tg-bizx" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="tg-bizx" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
                             </tr>
                             <tr>
-                            <td class="tg-rtwp">Saldo</td>
-                            <td class="tg-rtwp">Saldo &gt;= Quantia</td>
-                            <td class="tg-rtwp">Saldo &lt; Quantia</td>
+                            <td class="linhacinza">Saldo</td>
+                            <td class="linhacinza">Saldo &gt;= Quantia</td>
+                            <td class="linhacinza">Saldo &lt; Quantia</td>
                             </tr>
                             <tr>
-                            <td class="tg-ge46">Quantia</td>
-                            <td class="tg-ge46">Quantia &gt; 0</td>
-                            <td class="tg-ge46">Quantia &lt;= 0</td>
+                            <td class="linhabranca">Quantia</td>
+                            <td class="linhabranca">Quantia &gt; 0</td>
+                            <td class="linhabranca">Quantia &lt;= 0</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
 
-                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez: <br></p>
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                        <tr>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Depósito</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                        </tr>
+                        <tr>
+                            <td class="linhacinza">Quantia</td>
+                            <td class="linhacinza">Quantia &gt; 0</td>
+                            <td class="linhacinza">Quantia &lt;= 0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez:</p>
                 
-                <div class="container">
-                    <table class="tg" width="70%;" align="center">
+                <div id = "tabela">
+
+                    <table class="tg" width="45%;" align="center">
                         <thead>
-                        <tr>
-                            <th class="tg-bizx" style="font-weight:bold" colspan="3">Método Depósito</th>
-                        </tr>
+                          <tr>
+                            <th class="titulo" colspan="4" style="font-weight:bold">Método Saque</th>
+                          </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td class="tg-bizx" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="tg-bizx" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="tg-bizx" style="font-weight:bold">Classes de Equivalência Inválidas</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-rtwp">Quantia</td>
-                            <td class="tg-rtwp">Quantia &gt; 0</td>
-                            <td class="tg-rtwp">Quantia &lt;= 0</td>
-                        </tr>
+                          <tr>
+                            <td class="titulo"style="font-weight:bold">Casos de Teste</td>
+                            <td class="titulo"style="font-weight:bold">Condições iniciais</td>
+                            <td class="titulo"style="font-weight:bold">Entrada</td>
+                            <td class="titulo"style="font-weight:bold">Resultado Esperado</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-01</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">0,99</td>
+                            <td class="linhacinza">"Saque Realizado <br>com Sucesso!”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhabranca">CT-02</td>
+                            <td class="linhabranca">Saldo: R$1,00</td>
+                            <td class="linhabranca">1,01</td>
+                            <td class="linhabranca">“Saldo Insuficiente”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-03</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">-1</td>
+                            <td class="linhacinza">“Erro! Quantia<br>Inválida”</td>
+                          </tr>
                         </tbody>
                     </table>
-                </div>
 
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" colspan="4" style="font-weight:bold">Método Depósito</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="titulo" style="font-weight:bold">Casos de Teste</td>
+                              <td class="titulo" style="font-weight:bold">Condições iniciais</td>
+                              <td class="titulo" style="font-weight:bold">Entrada</td>
+                              <td class="titulo" style="font-weight:bold">Resultado Esperado</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-04</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">100,00</td>
+                              <td class="linhacinza">“Depósito Realizado com Sucesso</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-05</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">-1</td>
+                              <td class="linhabranca">“Erro! Quantia Inválida"</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
                 <div class="section-header">
                     <h2>IMPLEMENTAÇÃO</h2>
                 </div>
 
                 <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
+                
+                <div id="subscribe" style="text-align: center;">
+                    <button style="background-color: #E6984A;"><a href="#" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
+                </div>
+                
                 <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
+
+                <div class="container">
+                    <table class="tg" width="90%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" style="font-weight:bold">Casos de Teste</th>
+                              <th class="titulo" style="font-weight:bold">Condições iniciais</th>
+                              <th class="titulo" style="font-weight:bold">Entrada</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Esperado</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Obtido</th>
+                              <th class="titulo" style="font-weight:bold">Resultado dos Testes</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="linhacinza">CT-01</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">0,99</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-02</td>
+                              <td class="linhabranca">Saldo: R$1,00</td>
+                              <td class="linhabranca">1,01</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-03</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">"Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Falhou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-04</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">100,00</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-05</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+                <p><br></p>
             </div>
         </div>
         </section>

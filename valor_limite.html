@@ -34,7 +34,7 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
-
+    <link href="css/tabela.css" rel="stylesheet">
 </head>
 
 <body>
@@ -101,94 +101,315 @@
         <section id="info">
             <div class="container">
                 <div class="section-header">
-                    <h2>CHAMADA DE TRABALHOS</h2>
+                    <h2>ANÁLISE VALOR LIMITE</h2>
+                </div>
+                <div>
+                    <center>
+                        <img src="img/banner/lixeiras.jpg" class="img-fluid" alt="">
+                    </center>
                 </div>
                 <p>
-                    A VIII Jornada Informática do Maranhão (eJIM 2020) é um evento bienal que se iniciou em 2006, promovida pelo Departamento de Informática (DEINF), Coordenação da Engenharia da Computação (ECP) e pelo Programa de Pós-Graduação em Ciência da Computação (PPGCC), da Universidade Federal do Maranhão (UFMA). A JIM é um evento de caráter acadêmico e técnico-científico com o objetivo de propiciar um espaço de intercâmbio entre os diversos atores dos setores de Informática da região, apresentando e discutindo temas que abordem a aplicação da Computação para a solução de problemas do Estado do Maranhão, bem como divulgar as pesquisas em Informática realizadas nas instituições do estado.
+                    <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
                 </p>
 
-                <p>
-                    O Comitê de Organização da eJIM 2020 convida autores a submeter resumos expandidos de trabalhos em andamento ou completos, descrevendo resultados de trabalhos ou ideias relevantes a serem discutidas, relacionadas à Informática. Todos os artigos devem ser submetidos no formato de resumo expandido, deverão ser submetidos em português ou inglês, ter de 2 páginas incluindo figuras, tabelas e referências, e estar no formato Adobe PDF. No texto do artigo não devem ser incluídas informações que possibilitem a identificação dos autores. Assim, nomes, filiações e referências bibliográficas não devem aparecer neste formato inicial. Essas informações deverão ser incluídas somente na versão final do artigo. Os artigos devem seguir obrigatoriamente o formato definido pela SBC - Sociedade Brasileira de Computação, disponível para download <a href="https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos">aqui</a>. Recomenda-se que os trabalhos tenham a seguinte estrutura: Introdução, Trabalhos Relacionando, Metodologia, Resultados Alcançados até o Momento e Conclusões.
-                </p>
-
-                <p>
-                    Neste ano, as apresentações dos trabalhos serão realizadas virtualmente, através de plataformas de comunicação online.
-                </p>
-
-                <h3>Temas de Interesse</h3>
-
+                <h3 style="font-weight:bold;">Aplicação da Técnica:</h3>
                 <ul>
-                    <li>Arquitetura de computadores</li>
-                    <li>Ciência de dados</li>
-                    <li>Computação em nuvem</li>
-                    <li>Computação Gráfica</li>
-                    <li>Engenharia de Software</li>
-                    <li>Gestão de Tecnologia da Informação</li>
-                    <li>Inclusão Digital</li>
-                    <li>Informática Industrial</li>
-                    <li>Informática na Educação</li>
-                    <li>Informártica Pública</li>
-                    <li>Inteligência Artificial</li>
-                    <li>Jogos Digitais</li>
-                    <li>Linguagens de Programação</li>
-                    <li>Processamento Digital de Imagens</li>
-                    <li>Processamento de Linguagem Natural</li>
-                    <li>Processamento Digital de Imagens</li>
-                    <li>Realidade Virtual</li>
-                    <li>Redes de Computadores</li>
-                    <li>Sistemas de Informação Geográfica</li>
-                    <li>Sistemas Distribuídos</li>
-                    <li>Sistemas Embarcados</li>
-                    <li>Sistemas Hipermídia, Multimídia e Web</li>
-                    <li>Sistemas Operacionais</li>
-                    <li>Software Livre</li>
-                    <li>TV Digital</li>
-                    <li>Outros temas relacionados à Ciência da Computação e Engenharia da Computação</li>
+                    <h5 style="font-weight:bold;">Passo 1:</h5>
+                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
+                    <li>Verifique as diretrizes para definir as classes;</li>
+                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
+                    <li>Divida em classes válidas ou inválidas.</li>
+
+                    <h5 style="font-weight:bold;"><br>Passo 2:</h5>
+                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
+                    <li>Verifique as diretrizes para definir as classes;</li>
+                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
+                    <li>Divida em classes válidas ou inválidas.</li>
                 </ul>
+                    <div class="section-header">
+                        <h2>EXEMPLO</h2>
+                    </div>
+                    <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
+                    <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
 
-                <h3>Datas Importantes</h3>
-                <p>Submissão de artigos: <b>21 de junho de 2020</b></p>
-                <p>Notificação de aceitação: <b>01 de julho de 2020</b></p>
-                <p>Envio da versão final: <b>08 de julho de 2020</b></p>
-                <p>Apresentações: <b>Começam dia 13 de julho</b></p>
+                            <div class="container">
+                                    <table class="tg" width="70%;" align="center">
+                                        <thead>
+                                        <tr>
+                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="linhacinza">Comprimento do ID</td>
+                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
+                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="linhabranca">ID inicia com uma letra</td>
+                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
+                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="linhacinza">ID contém letras e números</td>
+                                            <td class="linhacinza">(letras e dígitos)</td>
+                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
 
-                <h3>Submissão de artigos</h3>
-                <p>A submissão deverá ser feita exclusivamente de forma eletrônica pelo site <a href="https://easychair.org/conferences/?conf=ejim2020">https://easychair.org/conferences/?conf=ejim2020</a>. Não serão aceitas submissões por fax, email ou correio.</p>
-                <p>Nós preparamos um tutorial de utilização do sistema, caso tenha qualquer dificuldade.( <a href="/anexos/TutorialEJIM2020.pdf">https://pet.ufma.br/jim2020/anexos/tutorialjim2020.pdf</a>)</p> 
+                    <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
 
-                <h3>Julgamento dos trabalhos</h3>
-                <p>Os artigos serão julgados por uma comissão formada por profissionais, pesquisadores e professores envolvidos com as áreas mencionadas, tendo como principais fatores de julgamento:</p>
-                <ul>
-                    <li>Originalidade</li>
-                    <li>Relevância do tema</li>
-                    <li>Qualidade Técnica</li>
-                    <li>Apresentação</li>
-                </ul>
-                <p>Serão entregues certificados para os três melhores artigos com base nestes critérios, levando em conta também a apresentação oral.</p>
-
-                <h3>Apresentação Oral</h3>
-                <p>As apresentações dos trabalhos selecionados para publicação serão realizadas através de videoconferência, por plataforma a ser informada em breve. Recomenda-se o uso das ferramentas Microsoft Power Point, Google Slides, Apple Keynote ou LibreOffice Impress.</p>
-                <p>No slide inicial deve conter, obrigatoriamente, as seguintes informações: título do artigo, nomes dos autores, departamento curso/instituição dos autores, cidade/estado, agradecimento a instituição de fomento (se for o caso). Os demais slides devem focar principalmente na contextualização do problema abordado, no objetivo, na metodologia desenvolvida, nos resultados alcançados e nas considerações finais. Sendo que esta estrutura poderá sofrer alterações, caso os autores julguem necessário para o melhor entendimento do trabalho.</p>
-                <p>Recomenda-se utilizar recursos gráficos, tais como: figuras, fotos, tabelas, etc. de modo que as ideias centrais do trabalho sejam facilmente compreendidas por todos que estarão assistindo à apresentação. A apresentação deverá ser realizada através de slides, e não poderá se estender por mais de 10 minutos.</p>
-                <p>Após a apresentação, os avaliadores poderão questionar e discutir o trabalho com o autor por mais 5 minutos. O dia e o horário das Sessões de Apresentação deverão ser consultados no site do evento. É fortemente recomendado que o autor que irá realizar a apresentação do trabalho esteja presente na videoconferência da sessão deste o início da apresentação, pois em casos de ausências, os avaliadores poderão, em caráter de exceção, sugerir a troca da ordem das apresentações.</p>
-                <p><b>Não será permitido</b></p>
-                <ul>
-                  <li>Apresentação por mais de um autor;</li>  
-                  <li>Apresentação por não autores;</li>
-                  <li>Apresentação por outros meios que não sejam slides criados nas ferramentas recomendadas;</li>
-                  <li>Utilizar aparelhos e instrumentos sonoros que interfiram na comunicação dos autores e avaliadores da sessão;</li>
-                  <li>Alterar a data programada para a apresentação do trabalho.
-                </li>
-                </ul>
-
-                <h3>Comitê de Programa</h3>
-                <p>Chair da Trilha Principal: Dr. Tiago Bonini Borchart</p>
                 
-                <h3>Realização</h3>
-                <p>Departamento de Informática– DEINF/UFMA</p>
-                <p>Coordenação da Engenharia da Computação (Eng. Comp)</p>
-                <p>Programa de Pós-Graduação em Ciência da Computação – PPGCC/UFMA</p>
+                <div class="container">
+                        
+                        <table class="tg" width="70%;" align="center">
+                            <thead>
+                                <tr>
+                                  <th class="titulo" colspan="3"><span style="font-weight:bold">Roteiro de Testes: Validar Identificador</span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="titulo">Caso de Teste</td>
+                                  <td class="titulo">Entrada</td>
+                                  <td class="titulo">Saída Esperada</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhacinza">CT-01</td>
+                                  <td class="linhacinza">teste1</td>
+                                  <td class="linhacinza">Indentificador Válido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhabranca">CT-02</td>
+                                  <td class="linhabranca">a</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhacinza">CT-03</td>
+                                  <td class="linhacinza">3teste</td>
+                                  <td class="linhacinza">Identificador Inválido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhabranca">CT-04</td>
+                                  <td class="linhabranca">teste</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                </div>
+
+                <div class="section-header">
+                    <h2>EXERCICIO 1 - CONTA BANCÁRIA</h2>
+                </div>
+                    <p>O Newbank está desenvolvendo seu aplicativo em Python. Nele, seus clientes serão representados por instâncias da classe Conta.py que você pode baixar logo abaixo. Essa classe possui os métodos de Saque e Depósito.  Seu trabalho será elaborar casos de testes baseados na técnica de Particionamento de Equivalência e implementá-los e executá-los usando a biblioteca unittest disponível nas versões mais recentes do Python. A documentação do sistema está a seguir:</p>
+
+                    <a href="#" class="about-btn scrollto">Baixar Documentação do sistema</a>
+
+                <ul>
+                    <h5 style="font-weight:bold;">Orientação:</h5>
+                    <li>Para utilizar a unittest, basta dar um “import unittest” no começo do arquivo;</li>
+                    <li>Uma nova classe de teste deve ser criada, extendendo unittest.TestCase;</li>
+                    <li>Cada método dessa classe será um caso de teste. Certifique-se de identificá-los;</li>
+                    <li>mporte também a classe Conta.py e a instancie em cada caso de teste, com os respectivos valores;</li>
+                    <li>Ao final de cada caso de teste, utilize o metodo .assertEqual() para comparar o valor esperado com o recebido pela classe após o teste;</li>
+                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://easychair.org/conferences/?conf=ejim2020">a documentação</a>;</li>
+                </ul>
+
+                <div class="section-header">
+                    <h2>RESOLUÇÃO</h2>
+                </div>
+
+                <p>Primeiramente, separamos as classes de equivalência, tanto para saque, quanto para saque, quanto para depósito: </p>
+                
+                <div id = "tabela">
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                            <tr>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Saque</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                            </tr>
+                            <tr>
+                            <td class="linhacinza">Saldo</td>
+                            <td class="linhacinza">Saldo &gt;= Quantia</td>
+                            <td class="linhacinza">Saldo &lt; Quantia</td>
+                            </tr>
+                            <tr>
+                            <td class="linhabranca">Quantia</td>
+                            <td class="linhabranca">Quantia &gt; 0</td>
+                            <td class="linhabranca">Quantia &lt;= 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                        <tr>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Depósito</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                        </tr>
+                        <tr>
+                            <td class="linhacinza">Quantia</td>
+                            <td class="linhacinza">Quantia &gt; 0</td>
+                            <td class="linhacinza">Quantia &lt;= 0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez:</p>
+                
+                <div id = "tabela">
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                          <tr>
+                            <th class="titulo" colspan="4" style="font-weight:bold">Método Saque</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="titulo"style="font-weight:bold">Casos de Teste</td>
+                            <td class="titulo"style="font-weight:bold">Condições iniciais</td>
+                            <td class="titulo"style="font-weight:bold">Entrada</td>
+                            <td class="titulo"style="font-weight:bold">Resultado Esperado</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-01</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">0,99</td>
+                            <td class="linhacinza">"Saque Realizado <br>com Sucesso!”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhabranca">CT-02</td>
+                            <td class="linhabranca">Saldo: R$1,00</td>
+                            <td class="linhabranca">1,01</td>
+                            <td class="linhabranca">“Saldo Insuficiente”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-03</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">-1</td>
+                            <td class="linhacinza">“Erro! Quantia<br>Inválida”</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" colspan="4" style="font-weight:bold">Método Depósito</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="titulo" style="font-weight:bold">Casos de Teste</td>
+                              <td class="titulo" style="font-weight:bold">Condições iniciais</td>
+                              <td class="titulo" style="font-weight:bold">Entrada</td>
+                              <td class="titulo" style="font-weight:bold">Resultado Esperado</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-04</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">100,00</td>
+                              <td class="linhacinza">“Depósito Realizado com Sucesso</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-05</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">-1</td>
+                              <td class="linhabranca">“Erro! Quantia Inválida"</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+                <div class="section-header">
+                    <h2>IMPLEMENTAÇÃO</h2>
+                </div>
+
+                <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
+                
+                <div id="subscribe" style="text-align: center;">
+                    <button style="background-color: #E6984A;"><a href="#" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
+                </div>
+                
+                <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
+
+                <div class="container">
+                    <table class="tg" width="90%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" style="font-weight:bold">Casos de Teste</th>
+                              <th class="titulo" style="font-weight:bold">Condições iniciais</th>
+                              <th class="titulo" style="font-weight:bold">Entrada</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Esperado</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Obtido</th>
+                              <th class="titulo" style="font-weight:bold">Resultado dos Testes</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="linhacinza">CT-01</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">0,99</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-02</td>
+                              <td class="linhabranca">Saldo: R$1,00</td>
+                              <td class="linhabranca">1,01</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-03</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">"Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Falhou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-04</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">100,00</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-05</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+                <p><br></p>
             </div>
+        </div>
         </section>
 
     </main>
