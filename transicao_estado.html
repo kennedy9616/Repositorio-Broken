@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JIM2020</title>
+    <title>Broken</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Template, Evento, petcomp, " name="keywords">
     <meta content="PETCOMP-UFMA" name="author">
@@ -34,10 +34,18 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
+    <link href="css/tabela.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!--==========================
+        Header
+    ============================-->
+    <!--<div clas="container">
+        <img src="img/Banner_do_Header.png" style="width: 100%;">
+    </div>-->
+
     <!--==========================
         Header
     ============================-->
@@ -47,54 +55,64 @@
     </div>-->
 
     <header id="header" style="width: 100%;">
-        <div class="container">
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Caixa - Preta</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="particionamento_classe_equivalencia.html">Particionamento por Classe de Equivalência</a> 
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="valor_limite.html">Análise Valor Limite</a>  
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="causa_efeito.html">Grafo Causa-Efeito</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="transicao_estado.html">Teste Transição de Estado</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="caso_uso.html">Teste Caso de Uso</a>
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste de Caixa-Branca</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="tutoriais.html">A definir</a>    
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Baseado na Experiência</a>   
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="anais.html">Suposição de Erro</a> 
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="certificados.html">Teste Exploratório</a>                
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">A definir</a>  
-                        </div>
-                     </a>
-                    </li> 
-                </ul>
-            </nav>
-            <!-- #nav-menu-container -->
+      <div class="container">
+          <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown menu-active">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Caixa - Preta</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="particionamento_classe_equivalencia.html">Particionamento por Classe de Equivalência</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="valor_limite.html">Análise Valor Limite</a>  
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="causa_efeito.html">Grafo Causa-Efeito</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="transicao_estado.html">Teste Transição de Estado</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="caso_uso.html">Teste Caso de Uso</a>
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste de Caixa-Branca</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Baseados na Complexidade</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Baseados em Fluxo de Controle</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Baseados em Fluxo de Dados</a>                 
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Baseado na Experiência</a>   
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Suposição de Erro</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Exploratório</a>                
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Teste de Usabilidade</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste de Performance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Segurança</a>  
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Baseado em Checklist</a>                 
+                      </div>
+                   </a>
+                  </li> 
+              </ul>
+          </nav>
+          <!-- #nav-menu-container -->
 
-        </div>
-    </header>
+      </div>
+  </header>
 
 
     <main id="main">
@@ -102,44 +120,315 @@
         <section id="info">
             <div class="container">
                 <div class="section-header">
-                    <h2>MARATONA</h2>
+                    <h2>TRANSIÇÃO DE ESTADO</h2>
                 </div>
-                <p>A Maratona de Programação é uma competição individual para programadores inscritos na eJIM2020. Cada competidor terá duas sessões de 3 horas para resolver remotamente o máximo de problemas computacionais elaborados especialmente para a prova. Os códigos podem ser enviados em C, C++, Java, Lua ou Python, usando o URI Online.</p>
-                <p>O objetivo do evento é estimular a capacidade de solucionar problemas sob a pressão do tempo, usando o computador. O evento também desenvolve a criatividade e a habilidade de análise da complexidade de algoritmos.</p>
+                <div>
+                    <center>
+                        <img src="img/banner/lixeiras.jpg" class="img-fluid" alt="">
+                    </center>
+                </div>
+                <p>
+                    <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
+                </p>
 
-                <h3>Datas Importantes</h3>
-                <p>Data limite para inscrição: <b>12 de julho de 2020. Até as 23:59h</b></p>
-                <p>Datas da Maratona de Programação: <b>15 e 16 de julho de 2020. 9h às 12h</b></p>
+                <h3 style="font-weight:bold;">Aplicação da Técnica:</h3>
+                <ul>
+                    <h5 style="font-weight:bold;">Passo 1:</h5>
+                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
+                    <li>Verifique as diretrizes para definir as classes;</li>
+                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
+                    <li>Divida em classes válidas ou inválidas.</li>
+
+                    <h5 style="font-weight:bold;"><br>Passo 2:</h5>
+                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
+                    <li>Verifique as diretrizes para definir as classes;</li>
+                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
+                    <li>Divida em classes válidas ou inválidas.</li>
+                </ul>
+                    <div class="section-header">
+                        <h2>EXEMPLO</h2>
+                    </div>
+                    <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
+                    <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
+
+                            <div class="container">
+                                    <table class="tg" width="70%;" align="center">
+                                        <thead>
+                                        <tr>
+                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
+                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="linhacinza">Comprimento do ID</td>
+                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
+                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="linhabranca">ID inicia com uma letra</td>
+                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
+                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="linhacinza">ID contém letras e números</td>
+                                            <td class="linhacinza">(letras e dígitos)</td>
+                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+
+                    <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
+
                 
-                <h3>Inscrições</h3>
-                <p>Para se inscrever basta clicar aqui.</p>
-                <p>O que é maratona de programação?</p>
-                <p>A Maratona de Programação da eJIM2020 é uma competição que se destina a alunos de cursos de graduação e início de pós-graduação na área de Computação e áreas afins (Ciência da Computação, Engenharia de Computação, Sistemas de Informação, Matemática etc). A competição promove nos estudantes a criatividade, a busca de novas soluções de software e a habilidade de resolver problemas sob pressão.</p>
-                <p>Os alunos tentarão resolver durante duas sessões de três horas, cada uma, o maior número possível dos problemas que são entregues no início da competição. A Maratona de Programação é uma batalha contra o relógio para resolver os problemas propostos.</p>
-                <p>O julgamento é estrito. A cada submissão incorreta de um problema é atribuída uma penalidade de tempo. O competidor que conseguir resolver o maior número de problemas (no menor tempo acumulado com as penalidades, caso haja empate) é declarado o vencedor.</p>
+                <div class="container">
+                        
+                        <table class="tg" width="70%;" align="center">
+                            <thead>
+                                <tr>
+                                  <th class="titulo" colspan="3"><span style="font-weight:bold">Roteiro de Testes: Validar Identificador</span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="titulo">Caso de Teste</td>
+                                  <td class="titulo">Entrada</td>
+                                  <td class="titulo">Saída Esperada</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhacinza">CT-01</td>
+                                  <td class="linhacinza">teste1</td>
+                                  <td class="linhacinza">Indentificador Válido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhabranca">CT-02</td>
+                                  <td class="linhabranca">a</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhacinza">CT-03</td>
+                                  <td class="linhacinza">3teste</td>
+                                  <td class="linhacinza">Identificador Inválido</td>
+                                </tr>
+                                <tr>
+                                  <td class="linhabranca">CT-04</td>
+                                  <td class="linhabranca">teste</td>
+                                  <td class="linhabranca">Identificador Inválido</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                </div>
+
+                <div class="section-header">
+                    <h2>EXERCICIO 1 - CONTA BANCÁRIA</h2>
+                </div>
+                    <p>O Newbank está desenvolvendo seu aplicativo em Python. Nele, seus clientes serão representados por instâncias da classe Conta.py que você pode baixar logo abaixo. Essa classe possui os métodos de Saque e Depósito.  Seu trabalho será elaborar casos de testes baseados na técnica de Particionamento de Equivalência e implementá-los e executá-los usando a biblioteca unittest disponível nas versões mais recentes do Python. A documentação do sistema está a seguir:</p>
+
+                    <a href="#" class="about-btn scrollto">Baixar Documentação do sistema</a>
+
+                <ul>
+                    <h5 style="font-weight:bold;">Orientação:</h5>
+                    <li>Para utilizar a unittest, basta dar um “import unittest” no começo do arquivo;</li>
+                    <li>Uma nova classe de teste deve ser criada, extendendo unittest.TestCase;</li>
+                    <li>Cada método dessa classe será um caso de teste. Certifique-se de identificá-los;</li>
+                    <li>mporte também a classe Conta.py e a instancie em cada caso de teste, com os respectivos valores;</li>
+                    <li>Ao final de cada caso de teste, utilize o metodo .assertEqual() para comparar o valor esperado com o recebido pela classe após o teste;</li>
+                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://easychair.org/conferences/?conf=ejim2020">a documentação</a>;</li>
+                </ul>
+
+                <div class="section-header">
+                    <h2>RESOLUÇÃO</h2>
+                </div>
+
+                <p>Primeiramente, separamos as classes de equivalência, tanto para saque, quanto para saque, quanto para depósito: </p>
                 
-                <h3>Formato da competição</h3>
-                <p>Os competidores recebem uma prova com diversos problemas que devem ser resolvidos durante as 3 (três) horas de competição. Os problemas deverão ser resolvidos em alguma das linguagens de programação disponíveis (C, C++, Python, Lua ou Java).</p>
-                <p>Os competidores poderão resolver um problema da prova em uma linguagem de programação e um outro problema em outra linguagem, sem qualquer prejuízo. Para a implementação, os times terão à sua disposição um computador e todo o material de consulta que desejarem.</p>
-                <p>Quando um competidor julgar que tem um programa que resolve um problema, ele pode submetê-lo à correção dos juízes, que compilam e executam este programa para uma bateria de testes desconhecida dos competidores (isso é feito automaticamente no site URI Online). Um problema é considerado resolvido se, para todos os testes da bateria, ele devolve o resultado esperado pelos juízes. Para cada submissão, o competidor recebe uma resposta, que pode ser satisfatória (e o problema está resolvido pelo competidor) ou indica algum erro ocorrido, como: resposta errada, tempo de execução excedido, erro de execução, erro de compilação etc.</p>
-                <p>O vencedor é aquele que resolve a maior quantidade de problemas somando os resultados das duas sessões de três horas de competição. Empates no número de problemas resolvidos são classificados pelo tempo corrigido. Ganha aquele que tem o menor tempo corrigido.</p>
-                <p>A organização da competição é responsável pela decisão de qualquer caso não previsto. Os competidores inscritos permitem o uso e divulgação de suas imagens e dos programas submetidos pela organização da competição.</p>
+                <div id = "tabela">
 
-                <h3>Ambiente Computacional</h3>
-                <p>Para realização da Maratona de Programação da eJIM2020 usaremos o portal URI Online em <a href="https://www.urionlinejudge.com.br/" target="_blank">www.urionlinejudge.com.br</a>.</p>
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                            <tr>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Saque</th>
+                            </tr>
+                        </thead>
 
-                <h3>Premiação</h3>
-                <p>A Maratona de Programação da eJIM 2020 oferecerá certificado de participação e diploma para os três primeiros colocados. Os doze primeiros colocados matriculados na UFMA que estiverem aptos a representar a instituição (vide regras em <a href="http://maratona.ime.usp.br/sobre20.html" target="_blank">http://maratona.ime.usp.br/sobre20.html</a> ) vão representar o UFMA na Maratona de Programação 2020, na regional de São Luís.</p>
+                        <tbody>
+                            <tr>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                            </tr>
+                            <tr>
+                            <td class="linhacinza">Saldo</td>
+                            <td class="linhacinza">Saldo &gt;= Quantia</td>
+                            <td class="linhacinza">Saldo &lt; Quantia</td>
+                            </tr>
+                            <tr>
+                            <td class="linhabranca">Quantia</td>
+                            <td class="linhabranca">Quantia &gt; 0</td>
+                            <td class="linhabranca">Quantia &lt;= 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                        <tr>
+                            <th class="titulo" style="font-weight:bold" colspan="3">Método Depósito</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
+                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
+                        </tr>
+                        <tr>
+                            <td class="linhacinza">Quantia</td>
+                            <td class="linhacinza">Quantia &gt; 0</td>
+                            <td class="linhacinza">Quantia &lt;= 0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez:</p>
                 
-                <h3>Organização</h3>
-                <p>A Maratona de Programação da eJIM 2020 só acontece graças ao trabalho voluntário de muitos entusiastas da ideia</p>
+                <div id = "tabela">
 
-                <h3>Coordenadores</h3>
-                <p>Prof. Dr. Carlos de Salles Soares Neto (UFMA) – carlos.salles@ufma.br</p>
-                <p>Prof. Dr. Sergio Souza Costa (UFMA) – sergio.costa@ufma.br</p>
-                <p>Contato</p>
-                <p>Dúvidas e informações enviar email para carlos.salles@ufma.br ou sergio.costa@ufma.br.</p>
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                          <tr>
+                            <th class="titulo" colspan="4" style="font-weight:bold">Método Saque</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="titulo"style="font-weight:bold">Casos de Teste</td>
+                            <td class="titulo"style="font-weight:bold">Condições iniciais</td>
+                            <td class="titulo"style="font-weight:bold">Entrada</td>
+                            <td class="titulo"style="font-weight:bold">Resultado Esperado</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-01</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">0,99</td>
+                            <td class="linhacinza">"Saque Realizado <br>com Sucesso!”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhabranca">CT-02</td>
+                            <td class="linhabranca">Saldo: R$1,00</td>
+                            <td class="linhabranca">1,01</td>
+                            <td class="linhabranca">“Saldo Insuficiente”</td>
+                          </tr>
+                          <tr>
+                            <td class="linhacinza">CT-03</td>
+                            <td class="linhacinza">Saldo: R$1,00</td>
+                            <td class="linhacinza">-1</td>
+                            <td class="linhacinza">“Erro! Quantia<br>Inválida”</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tg" width="45%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" colspan="4" style="font-weight:bold">Método Depósito</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="titulo" style="font-weight:bold">Casos de Teste</td>
+                              <td class="titulo" style="font-weight:bold">Condições iniciais</td>
+                              <td class="titulo" style="font-weight:bold">Entrada</td>
+                              <td class="titulo" style="font-weight:bold">Resultado Esperado</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-04</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">100,00</td>
+                              <td class="linhacinza">“Depósito Realizado com Sucesso</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-05</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">-1</td>
+                              <td class="linhabranca">“Erro! Quantia Inválida"</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+                <div class="section-header">
+                    <h2>IMPLEMENTAÇÃO</h2>
+                </div>
+
+                <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
+                
+                <div id="subscribe" style="text-align: center;">
+                    <button style="background-color: #E6984A;"><a href="https://drive.google.com/file/d/1SMXjfwAwZ_qiFF7s7D_CP-PZR-jokzUg/view?usp=sharing" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
+                </div>
+                
+                <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
+
+                <div class="container">
+                    <table class="tg" width="90%;" align="center">
+                        <thead>
+                            <tr>
+                              <th class="titulo" style="font-weight:bold">Casos de Teste</th>
+                              <th class="titulo" style="font-weight:bold">Condições iniciais</th>
+                              <th class="titulo" style="font-weight:bold">Entrada</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Esperado</th>
+                              <th class="titulo" style="font-weight:bold">Resultado Obtido</th>
+                              <th class="titulo" style="font-weight:bold">Resultado dos Testes</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="linhacinza">CT-01</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">0,99</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-02</td>
+                              <td class="linhabranca">Saldo: R$1,00</td>
+                              <td class="linhabranca">1,01</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-03</td>
+                              <td class="linhacinza">Saldo: R$1,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">"Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
+                              <td class="linhacinza">Falhou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT-04</td>
+                              <td class="linhabranca">Saldo: R$0,00</td>
+                              <td class="linhabranca">100,00</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
+                              <td class="linhabranca">Passou</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT-05</td>
+                              <td class="linhacinza">Saldo: R$0,00</td>
+                              <td class="linhacinza">-1</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
+                              <td class="linhacinza">Passou</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+                <p><br></p>
             </div>
+        </div>
         </section>
 
     </main>
@@ -149,25 +438,25 @@
     ============================-->
 
     <footer id="footer">
-        <div class="footer-top">
-            <div class="footer-info" id="contatos">
-                <h4 >Contatos</h4>
-                <div id ="email">
-                    <strong>E-mail:</strong> petcomputacao.ufma@gmail.com
-                </div>
-                <div class="social-links">
-                    <a href="https://twitter.com/petcompufma" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/petcompufma/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                </div>  
-            </div>
-        </div>
+      <div class="footer-top">
+          <div class="footer-info" id="contatos">
+              <h4 >Contatos</h4>
+              <div id ="email">
+                  <strong>E-mail:</strong> kennedy.anderson@discente.ufma.br
+              </div>
+              <div class="social-links">
+                  <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/kennedy_anderson99/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>  
+          </div>
+      </div>
 
-        <div class="copyright">
-            <strong>JIM 2020</strong>
-        </div>
-    </footer>
-  
-  <!-- #footer -->
+      <div class="copyright">
+          <strong>Broken</strong>
+      </div>
+  </footer>
+
+<!-- #footer -->
 
     
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>

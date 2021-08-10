@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JIM2020</title>
+    <title>Broken</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Template, Evento, petcomp, " name="keywords">
     <meta content="PETCOMP-UFMA" name="author">
@@ -35,9 +35,17 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
     <link href="css/tabela.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <!--==========================
+        Header
+    ============================-->
+    <!--<div clas="container">
+        <img src="img/Banner_do_Header.png" style="width: 100%;">
+    </div>-->
+
     <!--==========================
         Header
     ============================-->
@@ -47,121 +55,108 @@
     </div>-->
 
     <header id="header" style="width: 100%;">
-        <div class="container">
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Caixa - Preta</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="particionamento_classe_equivalencia.html">Particionamento por Classe de Equivalência</a> 
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="valor_limite.html">Análise Valor Limite</a>  
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="causa_efeito.html">Grafo Causa-Efeito</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="transicao_estado.html">Teste Transição de Estado</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="caso_uso.html">Teste Caso de Uso</a>
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste de Caixa-Branca</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="tutoriais.html">A definir</a>    
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Baseado na Experiência</a>   
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="anais.html">Suposição de Erro</a> 
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="certificados.html">Teste Exploratório</a>                
-                        </div>
-                     </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">A definir</a>  
-                        </div>
-                     </a>
-                    </li> 
-                </ul>
-            </nav>
-            <!-- #nav-menu-container -->
+      <div class="container">
+          <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown menu-active">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Caixa - Preta</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="particionamento_classe_equivalencia.html">Particionamento por Classe de Equivalência</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="valor_limite.html">Análise Valor Limite</a>  
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="causa_efeito.html">Grafo Causa-Efeito</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="transicao_estado.html">Teste Transição de Estado</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="caso_uso.html">Teste Caso de Uso</a>
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste de Caixa-Branca</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Baseados na Complexidade</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Baseados em Fluxo de Controle</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Baseados em Fluxo de Dados</a>                 
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Baseado na Experiência</a>   
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Suposição de Erro</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Exploratório</a>                
+                      </div>
+                   </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Teste de Usabilidade</a> 
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste de Performance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Segurança</a>  
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Teste Baseado em Checklist</a>                 
+                      </div>
+                   </a>
+                  </li> 
+              </ul>
+          </nav>
+          <!-- #nav-menu-container -->
 
-        </div>
-    </header>
+      </div>
+  </header>
 
     <main id="main">
 
         <section id="info">
             <div class="container">
                 <div class="section-header">
-                    <h2>ANÁLISE VALOR LIMITE</h2>
+                    <h2>ANÁLISE DO VALOR LIMITE</h2>
                 </div>
+                
                 <div>
                     <center>
-                        <img src="img/banner/lixeiras.jpg" class="img-fluid" alt="">
+                        <img style="width: 75%;" src="img/banner/valor_limite.png" class="img-fluid" alt="">
                     </center>
                 </div>
-                <p>
-                    <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
-                </p>
+
+
+                <p><br>Técnica  complementar ao Particionamento Por Classe de Equivalência. A sua principal diferença é que ele seleciona casos de teste baseados nos limites das classes do contexto.<br></p>
+                <div id="tabela">
+                  <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                  <center>
+                      <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                  </center>
+                </div>
 
                 <h3 style="font-weight:bold;">Aplicação da Técnica:</h3>
                 <ul>
                     <h5 style="font-weight:bold;">Passo 1:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                    <li>	Quando a entrada especifica um intervalo de valores, devemos levar em consideração os limites inferior e superior e valores adjacentes foras do intervalo.</li>
 
                     <h5 style="font-weight:bold;"><br>Passo 2:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                    <li>Quando a entrada especifica um intervalo de valores, devemos levar em consideração os limites inferior e superior e valores adjacentes foras do intervalo.</li>
                 </ul>
                     <div class="section-header">
                         <h2>EXEMPLO</h2>
                     </div>
-                    <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
-                    <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
+                    <p>   Um sistema de irrigação é programado para ativar sprinklers, a cada hora que se passa, durante os minutos 20 a 40. Elabore casos de teste para serem utilizados na fase de testes deste sistema utilizando a técnica de Análise de Valor Limite.</p>
+                    <p> Note que dessa vez nossos valores de entrada são um intervalo de valores, entre 20 e 40 minutos. Supondo que rotinas de teste serão executadas a cada hora, podemos elaborar casos de teste utilizando os seguintes valores no intervalo de tempo proposto.</p>
+                    
+                    <center>
+                      <img style="width: 50%;" src="img/banner/valor_limite3.png" class="img-fluid" alt="">
+                    </center>
 
-                            <div class="container">
-                                    <table class="tg" width="70%;" align="center">
-                                        <thead>
-                                        <tr>
-                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="linhacinza">Comprimento do ID</td>
-                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
-                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhabranca">ID inicia com uma letra</td>
-                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
-                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhacinza">ID contém letras e números</td>
-                                            <td class="linhacinza">(letras e dígitos)</td>
-                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-
-                    <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
+                    <P><br>Perceba que assim realizamos testes exatamente 1 segundo antes ao momento em que o sprinkler deve ser ligado e também 1 segundo após o momento que ele deve ser desligado.</P>
+                    <p><br>Com isso, também garantimos casos de teste para saber se o equipamento está ligado nos horários em que ele não deve estar.</p>
 
                 
                 <div class="container">
@@ -216,7 +211,7 @@
                     <li>Cada método dessa classe será um caso de teste. Certifique-se de identificá-los;</li>
                     <li>mporte também a classe Conta.py e a instancie em cada caso de teste, com os respectivos valores;</li>
                     <li>Ao final de cada caso de teste, utilize o metodo .assertEqual() para comparar o valor esperado com o recebido pela classe após o teste;</li>
-                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://easychair.org/conferences/?conf=ejim2020">a documentação</a>;</li>
+                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://docs.google.com/document/d/1_v5gNOeQ-0BVx5YQ5upWPO7CbPKc40K5uSEIhwqsvSc/edit?usp=sharing" target="_blank">a documentação</a>;</li>
                 </ul>
 
                 <div class="section-header">
@@ -345,11 +340,9 @@
 
                 <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
                 
-                <div id="subscribe" style="text-align: center;">
-                    <button style="background-color: #E6984A;"><a href="#" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
-                </div>
+                <div class ="btn"><a href="https://drive.google.com/drive/folders/1LUITFYHmayTPpGEHclXKz-PMA2K2tgL2?usp=sharing" target="_blank"style="color:#fff;" >Baixar casos de teste automatizados</a></div>
                 
-                <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
+                <p><br>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
 
                 <div class="container">
                     <table class="tg" width="90%;" align="center">
@@ -419,25 +412,25 @@
     ============================-->
 
     <footer id="footer">
-        <div class="footer-top">
-            <div class="footer-info" id="contatos">
-                <h4 >Contatos</h4>
-                <div id ="email">
-                    <strong>E-mail:</strong> petcomputacao.ufma@gmail.com
-                </div>
-                <div class="social-links">
-                    <a href="https://twitter.com/petcompufma" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/petcompufma/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                </div>  
-            </div>
-        </div>
+      <div class="footer-top">
+          <div class="footer-info" id="contatos">
+              <h4 >Contatos</h4>
+              <div id ="email">
+                  <strong>E-mail:</strong> kennedy.anderson@discente.ufma.br
+              </div>
+              <div class="social-links">
+                  <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/kennedy_anderson99/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>  
+          </div>
+      </div>
 
-        <div class="copyright">
-            <strong>JIM 2020</strong>
-        </div>
-    </footer>
-  
-  <!-- #footer -->
+      <div class="copyright">
+          <strong>Broken</strong>
+      </div>
+  </footer>
+
+<!-- #footer -->
 
     
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>

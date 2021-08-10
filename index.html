@@ -69,23 +69,33 @@
                     <li class="dropdown">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste de Caixa-Branca</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="tutoriais.html">A definir</a>    
+                            <a class="dropdown-item" href="#">Baseados na Complexidade</a> 
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Baseados em Fluxo de Controle</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Baseados em Fluxo de Dados</a>                 
                         </div>
                      </a>
                     </li>
                     <li class="dropdown">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Baseado na Experiência</a>   
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="anais.html">Suposição de Erro</a> 
+                            <a class="dropdown-item" href="#">Suposição de Erro</a> 
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="certificados.html">Teste Exploratório</a>                
+                            <a class="dropdown-item" href="#">Teste Exploratório</a>                
                         </div>
                      </a>
                     </li>
                     <li class="dropdown">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">A definir</a>  
+                            <a class="dropdown-item" href="#">Teste de Usabilidade</a> 
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Teste de Performance</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Teste Segurança</a>  
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Teste Baseado em Checklist</a>                 
                         </div>
                      </a>
                     </li> 
@@ -116,11 +126,11 @@
                 <div class="row">
                     <center>
                     <div class="col-lg-6">
-                        <h2>Sobre o Evento</h2>
-                        <p><strong>O Encontro Acadêmico de Computação (EAComp)</strong> da UFMA é uma forma de receber novos alunos e familiarizá-los com o curso de 
-                            Graduação de Ciência da Computação da UFMA apresentando as oportunidades dentro da graduação. 
-                            O EAComp é organizado pelo <strong>Programa de Educação Tutorial do curso de Ciência da Computação (PETComp).</strong>
-                            O VIII EAComp será realizado no formato <strong>remoto</strong> devido à pandemia.
+                        <h2>Sobre o Broken</h2>
+                        <p>O objetivo do <strong> Repositório Broken</strong>  é fornecer suporte à prática de teste de software, 
+                            fornecendo materiais de apoio para as técnicas identificadas na literatura, 
+                            tanto de maneira manual como automatizada. Até o presente momento, os materiais de apoio 
+                            estão sendo desenvolvidos considerando as necessidades levantadas para a aplicação práticas das técnicas de teste de software.
                         </p>
                     </div></center>
                 </div>
@@ -133,21 +143,27 @@
 
         <section id="faq" class="wow fadeInUp">
             <div class="section-header">
-                <h2>Orientações</h2>
+                <h2>FUNDAMENTAÇÃO TEÓRICA</h2>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <p>Orientações para participação da EJIM</p>
+                    <p>Teste Caixa-preta:</p>
                     <ol>
                         <li>
                           <strong>
-                            Este ano, é necessário que você se inscreva em cada atividade de forma separada, utilizando a 
-                            plataforma Sympla para mantermos um melhor controle da frequência. Acesse os links de inscrição 
-                            clicando no botão "Inscreva-se" no menu principal.
+                            São técnicas que avaliam se o sistema está de acordo com sua especificação funcional, sendo elas:
                           </strong>
+                          <ul>
+                            <li> <strong>Particionamento em Classes de Equivalência: </strong> Essa técnica de teste divide o domínio de entrada em classes de equivalência válidas e inválidas, a partir das condições de entrada identificadas no programa.</li>
+                            <li> <strong>Análise do Valor Limite:</strong> Em complemento ao Particionamento por Classe de Equivalência, nesta técnica os casos de teste são selecionados nas fronteiras de cada classe.</li>
+                            <li> <strong>Teste Grafo Causa Efeito:</strong>Essa técnica de teste verifica o efeito combinado de dados de entrada. As causas (condições de entrada) e os efeitos (ações) são identificados e combinados em um grafo a partir do qual é montada uma tabela de decisão. A partir desta tabela, são derivados os casos de teste e as saídas.</li>
+                            <li> <strong>Teste de Transição de Estado:</strong>Representa-se o sistema a ser testado como um diagrama de transição de estados. Os casos de testes são definidos de forma que cada caminho do diagrama seja percorrido.</li>
+                            <li> <strong>Teste de Caso de Uso:</strong> Gera casos de teste interpretando o diagrama de casos de uso do sistema.
+                          </ul>
+ 
                         </li>
-                      </ol>
+                    </ol>
                 </div>
             </div>
         </section>
@@ -164,17 +180,17 @@
             <div class="footer-info" id="contatos">
                 <h4 >Contatos</h4>
                 <div id ="email">
-                    <strong>E-mail:</strong> petcomputacao.ufma@gmail.com
+                    <strong>E-mail:</strong> kennedy.anderson@discente.ufma.br
                 </div>
                 <div class="social-links">
-                    <a href="https://twitter.com/petcompufma" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/petcompufma/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kennedy_anderson99/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
                 </div>  
             </div>
         </div>
 
         <div class="copyright">
-            <strong>JIM 2020</strong>
+            <strong>Broken</strong>
         </div>
     </footer>
   
