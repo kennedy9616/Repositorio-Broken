@@ -133,59 +133,103 @@
                     </center>
                 </div>
                 <p>
-                    <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
+                    <br>Esse critério de teste verifica o efeito combinado de dados de entrada. As causas (condições de entrada) e os efeitos (ações) são identificados e combinados em um grafo a partir do qual é montada uma tabela de decisão, e a partir desta, são derivados os casos de teste e as saídas (ROCHA et al., 2001).<br>
                 </p>
 
                 <h3 style="font-weight:bold;">Aplicação da Técnica:</h3>
                 <ul>
                     <h5 style="font-weight:bold;">Passo 1:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                    <li>Dividir a especificação do software em partes, pois a construção do grafo para grandes especificações torna-se bastante complexa. Identificar as causas e efeitos na especificação.</li>
 
                     <h5 style="font-weight:bold;"><br>Passo 2:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                    <li>As causas correspondem às condições de entrada, ou uma particular classe de equivalência, estímulos, ou qualquer coisa que provoque uma resposta do sistema em teste. Os efeitos correspondem às saídas, mudanças no estado do sistema ou qualquer resposta observável.</li>
+                    <h5 style="font-weight:bold;"><br>Passo 3:</h5>
+                    <li>Uma vez identificados, a cada um deve ser atribuído um único número.</li>
+                    <h5 style="font-weight:bold;"><br>Passo 4:</h5>
+                    <li> a semântica da especificação e transformar em um grafo booleano – o Grafo Causa-Efeito – que liga as causas e os efeitos.</li>
                 </ul>
+                  <div class="section-header">
+                        <h2>LIGAÇÃO DE CAUSA - EFEITO</h2>
+                  </div>
+                  
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+
+                  <div class="section-header">
+                      <h2>RESTRIÇÃO DE CAUSA - EFEITO</h2>
+                  </div>
+
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+                  <div id="tabela">
+                    <p style="font-weight: bold;"><br>O Particionamento por Equivalência foca no conteúdo de uma caixa.<br><br> Análise de Valor Limite foca nas extremidades dessa caixa.<br></p>
+                    <center>
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </center>
+                  </div>
+
+                  <div class="section-header">
+                    <h2>TABELA DE DECISÃO</h2>
+                  </div>
+                  <h5 style="font-weight:bold;">Construção da Tabela de Decisões:</h5>
+                  <ul>
+                    <li>Para cada efeito, percorra o grafo no sentido efeito-causa e selecione as combinações de causas que produzem o efeito considerado</li>
+                    <li>Crie uma coluna na tabela de decisões para cada combinação de causas</li>
+                  </ul>
+
                     <div class="section-header">
                         <h2>EXEMPLO</h2>
                     </div>
-                    <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
-                    <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
+                      <p>“Em um programa de compras pela Internet, a cobrança ou não do frete é definida seguindo tal regra: Se o valor da compra for maior que R$ 80,00 e foram comprados menos que 3 produtos, o frete é gratuito. Caso contrário, o frete deverá ser cobrado.”</p>
+                      <center>
+                          <img style="width: 30%;" src="img/banner/caminhao_causa_efeito.png" class="img-fluid" alt="">
+                      </center>
+                    <p>A partir da especificação identificamos as causas e efeitos:</p>
+                    <ul><li>Obs.: “C” será as causas e “E” o efeitos, logo depois será usado um numerador para identificar cada item.</li></ul>
+                   
+                    <h5 style="font-weight:bold;">Causas:</h5>
+                    <ul>
+                      <li>C1 - Valor da compra > R$ 80,00</li>
+                      <li>C2 - Quantidade de produtos &lt 3</li> 
+                    </ul>
+                    
+                    <h5 style="font-weight:bold;">Efeitos:</h5>
+                    <ul>
+                      <li>E1 - Frete Grátis</li>
+                      <li>E2 - Cobrar Frete</li>
+                    </ul>
+                    <p>Com as causas e efeitos identificados e listados,  vamos para a construção do grafo como dado abaixo:</p>
+                    <div style = "text-align: center;">
+                        <img style="width: 50%;" src="img/banner/valor_limite2.png" class="img-fluid" alt="">
+                    </div>
 
-                            <div class="container">
-                                    <table class="tg" width="70%;" align="center">
-                                        <thead>
-                                        <tr>
-                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="linhacinza">Comprimento do ID</td>
-                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
-                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhabranca">ID inicia com uma letra</td>
-                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
-                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhacinza">ID contém letras e números</td>
-                                            <td class="linhacinza">(letras e dígitos)</td>
-                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-
-                    <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
+                    <P><br>Em seguida, temos que transforma esse grafo na tabela de decisões, como feito abaixo:</P>
 
                 
                 <div class="container">
@@ -210,16 +254,6 @@
                                 <tr>
                                   <td class="linhabranca">CT-02</td>
                                   <td class="linhabranca">a</td>
-                                  <td class="linhabranca">Identificador Inválido</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhacinza">CT-03</td>
-                                  <td class="linhacinza">3teste</td>
-                                  <td class="linhacinza">Identificador Inválido</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhabranca">CT-04</td>
-                                  <td class="linhabranca">teste</td>
                                   <td class="linhabranca">Identificador Inválido</td>
                                 </tr>
                               </tbody>
