@@ -34,6 +34,7 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
+    <link href="css/tabela.css" rel="stylesheet">
 
 </head>
 
@@ -63,7 +64,7 @@
         <div class="container">
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Caixa - Preta</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -99,7 +100,7 @@
                         </div>
                      </a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown menu-active">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste Adicionais</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="teste_usabilidade.html">Teste de Usabilidade</a> 
@@ -120,69 +121,19 @@
     </header>
 
     <main id="main">
-        <!--==========================
-            Intro Section
-        ============================-->
-      
-        <section id="intro">
-            <div class="intro-container wow fadeIn">
-              <h1 class="mb-4 pb-0">Repositório <span>Broken</span><br></h1>
-              <a href="#about" class="about-btn scrollto">Sobre o Broken</a>
-            </div>
-          </section>
 
-        <!--==========================
-            About Section
-        ============================-->
-        <section id="about">
+        <section id="info">
             <div class="container">
-                <div class="row">
-                    <center>
-                        <div class="col-lg-6">
-                            <h2>Sobre o Broken</h2>
-                            <p>O objetivo do <strong> Repositório Broken</strong>  é fornecer suporte à prática de teste de software, 
-                                fornecendo materiais de apoio para as técnicas identificadas na literatura, 
-                                tanto de maneira manual como automatizada. Até o presente momento, os materiais de apoio 
-                                estão sendo desenvolvidos considerando as necessidades levantadas para a aplicação práticas das técnicas de teste de software.
-                            </p>
-                        </div>
-                    </center>
+                <div class="section-header">
+                    <h2>TESTE BASEADO EM CHECKLIST</h2>
+                </div>
+                <div class="section-header">
+                    <h2>EM DESENVOLVIMENTO</h2>
                 </div>
             </div>
         </section>
+   
 
-        <!--====================   
-            Orientações
-        ======================-->
-
-        <section id="faq" class="wow fadeInUp">
-            <div class="section-header">
-                <h2>FUNDAMENTAÇÃO TEÓRICA</h2>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <p>Teste Caixa-preta:</p>
-                    <ol>
-                        <li>
-                          <strong>
-                            São técnicas que avaliam se o sistema está de acordo com sua especificação funcional, sendo elas:
-                          </strong>
-                          <ul>
-                            <li> <strong>Particionamento em Classes de Equivalência: </strong> Essa técnica de teste divide o domínio de entrada em classes de equivalência válidas e inválidas, a partir das condições de entrada identificadas no programa.</li>
-                            <li> <strong>Análise do Valor Limite:</strong> Em complemento ao Particionamento por Classe de Equivalência, nesta técnica os casos de teste são selecionados nas fronteiras de cada classe.</li>
-                            <li> <strong>Teste Grafo Causa Efeito:</strong>Essa técnica de teste verifica o efeito combinado de dados de entrada. As causas (condições de entrada) e os efeitos (ações) são identificados e combinados em um grafo a partir do qual é montada uma tabela de decisão. A partir desta tabela, são derivados os casos de teste e as saídas.</li>
-                            <li> <strong>Teste de Transição de Estado:</strong>Representa-se o sistema a ser testado como um diagrama de transição de estados. Os casos de testes são definidos de forma que cada caminho do diagrama seja percorrido.</li>
-                            <li> <strong>Teste de Caso de Uso:</strong> Gera casos de teste interpretando o diagrama de casos de uso do sistema.
-                          </ul>
- 
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-               
     </main>
 
     <!--==========================
