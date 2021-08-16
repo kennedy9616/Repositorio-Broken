@@ -9,5 +9,6 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 
 #tabela {
     display: inline-flex;
+    width: 100%;
 }
     
