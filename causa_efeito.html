@@ -315,215 +315,51 @@
                       </table>
                     </div>
                 
-                    <p><br>A partir da tabela de decisão criar os casos de teste separando em classes válidas e inválidas ou em verdadeiras e falsas, como no exemplo abaixo:</p>
-
-                <div class="section-header">
-                    <h2>EXERCICIO 1 - CONTA BANCÁRIA</h2>
-                </div>
-                    <p>O Newbank está desenvolvendo seu aplicativo em Python. Nele, seus clientes serão representados por instâncias da classe Conta.py que você pode baixar logo abaixo. Essa classe possui os métodos de Saque e Depósito.  Seu trabalho será elaborar casos de testes baseados na técnica de Particionamento de Equivalência e implementá-los e executá-los usando a biblioteca unittest disponível nas versões mais recentes do Python. A documentação do sistema está a seguir:</p>
-
-                    <a href="#" class="about-btn scrollto">Baixar Documentação do sistema</a>
-
-                <ul>
-                    <h5 style="font-weight:bold;">Orientação:</h5>
-                    <li>Para utilizar a unittest, basta dar um “import unittest” no começo do arquivo;</li>
-                    <li>Uma nova classe de teste deve ser criada, extendendo unittest.TestCase;</li>
-                    <li>Cada método dessa classe será um caso de teste. Certifique-se de identificá-los;</li>
-                    <li>mporte também a classe Conta.py e a instancie em cada caso de teste, com os respectivos valores;</li>
-                    <li>Ao final de cada caso de teste, utilize o metodo .assertEqual() para comparar o valor esperado com o recebido pela classe após o teste;</li>
-                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://easychair.org/conferences/?conf=ejim2020">a documentação</a>;</li>
-                </ul>
-
-                <div class="section-header">
-                    <h2>RESOLUÇÃO</h2>
-                </div>
-
-                <p>Primeiramente, separamos as classes de equivalência, tanto para saque, quanto para saque, quanto para depósito: </p>
-                
-                <div id = "tabela">
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
+                    <p><br>A partir da tabela de decisão é derivado os casos de teste, na qual cada coluna representa um caso de teste, como na tabela abaixo:</p>
+                    <div style="text-align:center;">
+                      <table class="tg" width="70%;" align="center">
+                          <thead>
                             <tr>
-                            <th class="titulo" style="font-weight:bold" colspan="3">Método Saque</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
-                            </tr>
-                            <tr>
-                            <td class="linhacinza">Saldo</td>
-                            <td class="linhacinza">Saldo &gt;= Quantia</td>
-                            <td class="linhacinza">Saldo &lt; Quantia</td>
-                            </tr>
-                            <tr>
-                            <td class="linhabranca">Quantia</td>
-                            <td class="linhabranca">Quantia &gt; 0</td>
-                            <td class="linhabranca">Quantia &lt;= 0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                        <tr>
-                            <th class="titulo" style="font-weight:bold" colspan="3">Método Depósito</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
-                        </tr>
-                        <tr>
-                            <td class="linhacinza">Quantia</td>
-                            <td class="linhacinza">Quantia &gt; 0</td>
-                            <td class="linhacinza">Quantia &lt;= 0</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez:</p>
-                
-                <div id = "tabela">
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                          <tr>
-                            <th class="titulo" colspan="4" style="font-weight:bold">Método Saque</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="titulo"style="font-weight:bold">Casos de Teste</td>
-                            <td class="titulo"style="font-weight:bold">Condições iniciais</td>
-                            <td class="titulo"style="font-weight:bold">Entrada</td>
-                            <td class="titulo"style="font-weight:bold">Resultado Esperado</td>
-                          </tr>
-                          <tr>
-                            <td class="linhacinza">CT-01</td>
-                            <td class="linhacinza">Saldo: R$1,00</td>
-                            <td class="linhacinza">0,99</td>
-                            <td class="linhacinza">"Saque Realizado <br>com Sucesso!”</td>
-                          </tr>
-                          <tr>
-                            <td class="linhabranca">CT-02</td>
-                            <td class="linhabranca">Saldo: R$1,00</td>
-                            <td class="linhabranca">1,01</td>
-                            <td class="linhabranca">“Saldo Insuficiente”</td>
-                          </tr>
-                          <tr>
-                            <td class="linhacinza">CT-03</td>
-                            <td class="linhacinza">Saldo: R$1,00</td>
-                            <td class="linhacinza">-1</td>
-                            <td class="linhacinza">“Erro! Quantia<br>Inválida”</td>
-                          </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                            <tr>
-                              <th class="titulo" colspan="4" style="font-weight:bold">Método Depósito</th>
+                              <th class="titulo">Casos de Teste</span></th>
+                              <th class="titulo">Entrada</span></th>
+                              <th class="titulo">Saída Esperada</span></th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td class="titulo" style="font-weight:bold">Casos de Teste</td>
-                              <td class="titulo" style="font-weight:bold">Condições iniciais</td>
-                              <td class="titulo" style="font-weight:bold">Entrada</td>
-                              <td class="titulo" style="font-weight:bold">Resultado Esperado</td>
+                              <td class="linhacinza">CT01</span></td>
+                              <td class="linhacinza">Valor: R$ 81,00 Produtos: 2</span></td>
+                              <td class="linhacinza">Frete Grátis</span></td>
                             </tr>
                             <tr>
-                              <td class="linhacinza">CT-04</td>
-                              <td class="linhacinza">Saldo: R$0,00</td>
-                              <td class="linhacinza">100,00</td>
-                              <td class="linhacinza">“Depósito Realizado com Sucesso</td>
+                              <td class="linhabranca">CT02</td>
+                              <td class="linhabranca">Valor: R$ 81,00 Produtos: 3</td>
+                              <td class="linhabranca">Cobrar Frete</td>
                             </tr>
                             <tr>
-                              <td class="linhabranca">CT-05</td>
-                              <td class="linhabranca">Saldo: R$0,00</td>
-                              <td class="linhabranca">-1</td>
-                              <td class="linhabranca">“Erro! Quantia Inválida"</td>
+                              <td class="linhacinza">CT03</span></td>
+                              <td class="linhacinza">Valor: R$ 79,00 Produto: 1</span></td>
+                              <td class="linhacinza">Cobrar Frete</span></td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT04</td>
+                              <td class="linhabranca">Valor: -1 Produto:3</td>
+                              <td class="linhabranca">Inválido</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">CT05</span></td>
+                              <td class="linhacinza">Valor: R$ 80,00 Produto:-1</span></td>
+                              <td class="linhacinza">Inválido</span></td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">CT06</span></td>
+                              <td class="linhabranca">Valor: R$ 80,00 Produto:0</span></td>
+                              <td class="linhabranca">Inválido</span></td>
                             </tr>
                           </tbody>
-                    </table>
-                </div>
-                <div class="section-header">
-                    <h2>IMPLEMENTAÇÃO</h2>
-                </div>
-
-                <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
-                
-                <div id="subscribe" style="text-align: center;">
-                    <button style="background-color: #E6984A;"><a href="https://drive.google.com/file/d/1SMXjfwAwZ_qiFF7s7D_CP-PZR-jokzUg/view?usp=sharing" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
-                </div>
-                
-                <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
-
-                <div class="container">
-                    <table class="tg" width="90%;" align="center">
-                        <thead>
-                            <tr>
-                              <th class="titulo" style="font-weight:bold">Casos de Teste</th>
-                              <th class="titulo" style="font-weight:bold">Condições iniciais</th>
-                              <th class="titulo" style="font-weight:bold">Entrada</th>
-                              <th class="titulo" style="font-weight:bold">Resultado Esperado</th>
-                              <th class="titulo" style="font-weight:bold">Resultado Obtido</th>
-                              <th class="titulo" style="font-weight:bold">Resultado dos Testes</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="linhacinza">CT-01</td>
-                              <td class="linhacinza">Saldo: R$1,00</td>
-                              <td class="linhacinza">0,99</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhabranca">CT-02</td>
-                              <td class="linhabranca">Saldo: R$1,00</td>
-                              <td class="linhabranca">1,01</td>
-                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
-                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
-                              <td class="linhabranca">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhacinza">CT-03</td>
-                              <td class="linhacinza">Saldo: R$1,00</td>
-                              <td class="linhacinza">-1</td>
-                              <td class="linhacinza">"Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">Falhou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhabranca">CT-04</td>
-                              <td class="linhabranca">Saldo: R$0,00</td>
-                              <td class="linhabranca">100,00</td>
-                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
-                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
-                              <td class="linhabranca">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhacinza">CT-05</td>
-                              <td class="linhacinza">Saldo: R$0,00</td>
-                              <td class="linhacinza">-1</td>
-                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">Passou</td>
-                            </tr>
-                          </tbody>
-                    </table>
-                </div>
-                <p><br></p>
-            </div>
+                        </table>
+                        <br>
+                    </div>
         </div>
         </section>
 

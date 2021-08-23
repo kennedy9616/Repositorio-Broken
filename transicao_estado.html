@@ -130,311 +130,191 @@
                 </div>
                 <div>
                     <center>
-                        <img src="img/banner/lixeiras.jpg" class="img-fluid" alt="">
+                        <img src="img/banner/Semaforo.jpg" class="img-fluid" alt="">
                     </center>
                 </div>
-                <p>
-                    <br>O particionamento de equivalência é uma técnica de Caixa-Preta que divide os dados em partições (também conhecidas como classes de equivalência), de tal forma que todos os membros de uma determinada partição deve ser processado da mesma maneira (ver Kaner (2013) e Jorgensen (2014)). Existem partições de equivalência para valores válidos e inválidos.<br>
-                </p>
+                <p><br>Diferentes literaturas podem se referir à Técnica de Transição de Estado como um grafo dirigido ou um autômato finito e isso não está errado.<br></p>
+                <p>Generalizando, podemos definir como uma representação gráfica dos estados que um determinado sistema pode alcançar. O sistema pode transitar entre estes estados baseado em condições atendidas ou interações do usuário.<br></p>
+                
+                <h3 style="font-weight:bold;">NOTAÇÃO:</h3>
+                <p>Cada vértice do grafo é um estado.<br></p>
+                <p>O estado inicial representa o começo da execução do sistema no contexto da técnica. O estado final é aquele que representa o término da execução do sistema.<br></p>
+                <p>Uma transição é o relacionamento entre dois estados. Cada transição tem uma condição e só pode ser seguida se essa condição for atendida.<br></p>
+                
+                <h3 style="font-weight:bold;">DEFINIÇÃO:</h3>
+                <p>Cada estado pode conter quantas instruções implícitas se queira, da mesma forma que um estado pode ser decomposto em vários outros estados com menos instruções, desde que o diagrama continue claro e corretamente definido.<br></p>
+                <p>Todo diagrama de transição de estado precisa garantir que todas as transições possam ser percorridas e que haja pelo menos um conjunto de dados que possa percorrer cada caminho do diagrama.<br></p>
 
                 <h3 style="font-weight:bold;">Aplicação da Técnica:</h3>
                 <ul>
-                    <h5 style="font-weight:bold;">Passo 1:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                  <h5 style="font-weight:bold;">Passo 1:</h5>
+                  <li>Analisar os dados do problema e definir os estados e transições.</li>
 
-                    <h5 style="font-weight:bold;"><br>Passo 2:</h5>
-                    <li>Para ajudar na identificação das classes, analise a especificação do produto procurando termos como intervalos e conjuntos, bem como palavras parecidas;</li>
-                    <li>Verifique as diretrizes para definir as classes;</li>
-                    <li>Se elementos de uma mesma classe forem tratados de forma diferente, divida em classes menores;</li>
-                    <li>Divida em classes válidas ou inválidas.</li>
+                  <h5 style="font-weight:bold;"><br>Passo 2:</h5>
+                  <li>Desenhar o diagrama, com transições sendo representadas como setas com condições que levam a estados.</li>
+                  
+                  <h5 style="font-weight:bold;"><br>Passo 3:</h5>
+                  <li> Gerar casos de teste baseados nos caminhos percorridos pelo diagrama para se alcançar os estados desejados.</li>
                 </ul>
-                    <div class="section-header">
-                        <h2>EXEMPLO</h2>
+                <p>Ilustrarmos melhor esses passos no exemplo a seguir.</p>
+
+                <div class="section-header">
+                  <h2>ELEMENTOS</h2>
+                </div>
+                <div id="tabela">
+                  <div  style="text-align: center;width: 50%;">
+                    <p><br><a style="font-weight: bold;">Estado:</a> representado por um retângulo com os cantos arredondados com o nome do estado no seu interior.</p>
+                  </div>
+                  <div  style="text-align: center;width: 50%;">
+                      <img style="width: 100px;" src="img/banner/transicao-estado/estado.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+                <div id="tabela">
+                  <div  style="text-align: center;width: 50%;">
+                    <p><br><a style="font-weight: bold;">Transição:</a> representa uma mudança de estado. Deve estar sempre associada a um evento.</p>
+                  </div>
+                  <div  style="text-align: center;width: 50%;">
+                      <img style="width: 200px;" src="img/banner/transicao-estado/transicao-evento.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Evento:</a> sempre aparece associado a uma transição indicando o evento que provoca a mudança de estado. Pode vir acompanhado de uma expressão de guarda e/ou uma ação.</p>
                     </div>
-                    <p> Considere um programa que deve determinar se um identificador de um usuário é válido ou não. Um identificador válido deve começar com uma letra e conter apenas letras e dígitos. Além disso, deve ter no mínimo 2 caractere e no máximo 6 caracteres de comprimento.</p>
-                    <p>Primeiramente, devemos separar as classes de equivalência. Essa separação pode ser representada como uma tabela. Indentifica-se as condições de entrada do teste e quais valores serão válidos e quais serão inválidos.</p>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 200px" src="img/banner/transicao-estado/transicao-evento.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Escolha:</a>
+                        permite definir vários estados alvo a partir de
+                        um mesmo evento. O evento deve estar associado ao
+                        segmento de entrada, enquanto as condições devem
+                        estar associadas aos segmentos de saída. Pode ser
+                        representador por um círculo (UML 1.4) ou por um
+                        losango (UML 2.0).</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 200px;" src="img/banner/transicao-estado/escolha.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Junção: </a> 
+                        é o ponto comum de junção de vários estados
+                        para um mesmo estado alvo. Pode ser representador por
+                        um círculo (UML 1.4) ou por um losango (UML 2.0).</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 80px;" src="img/banner/transicao-estado/juncao.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Evento After:</a> 
+                        Evento de tempo decorrido que indica um evento
+                        disparado após uma determinada quantidade de tempo.
+                        É modelado usando a expressão after(quantidade-de-tempo).</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 200px;" src="img/banner/transicao-estado/after.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Evento When:  </a> 
+                        Evento de mudança que indica um evento que ocorre
+                        no momento em que uma condição é satisfeita.
+                        É modelada usando a expressão when(condição).</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 200px;" src="img/banner/transicao-estado/when.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
 
-                            <div class="container">
-                                    <table class="tg" width="70%;" align="center">
-                                        <thead>
-                                        <tr>
-                                            <th class="titulo" style="font-weight:bold">Variáveis de Entrada</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</th>
-                                            <th class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="linhacinza">Comprimento do ID</td>
-                                            <td class="linhacinza">2 &lt;= Comprimento &lt;= 6</td>
-                                            <td class="linhacinza">Comprimento &lt; 2 e Comprimento &gt; 6</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhabranca">ID inicia com uma letra</td>
-                                            <td class="linhabranca">(letra) + (letra ou dígito)</td>
-                                            <td class="linhabranca">(dígito) + (letra ou dígito)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="linhacinza">ID contém letras e números</td>
-                                            <td class="linhacinza">(letras e dígitos)</td>
-                                            <td class="linhacinza">(apenas letras) ou (apenas dígitos)</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Estado inicial: </a> denota o estado em que um objeto é criado. Deve existir apenas um estado inicial.</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 80px;" src="img/banner/transicao-estado/inicial.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
 
-                    <P><br>Em seguida, elabora-se os casos de teste, um para os valores válidos e outros que exercitem cada classe de valor inválido:</P>
+                  <div id="tabela">
+                    <div  style="text-align: center;width: 50%;">
+                      <p><br><a style="font-weight: bold;">Estado final: </a> indica o estado final de um objeto. Pode existir mais de um estado final.</p>
+                    </div>
+                    <div  style="text-align: center;width: 50%;">
+                        <img style="width: 80px;" src="img/banner/transicao-estado/fim.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  
+                  <div class="section-header">
+                      <h2>EXEMPLO</h2>
+                  </div>
+                  <p>Considere um aplicativo para entrega de comida em que o usuário possui uma conta com saldo. Ele pode fazer um ou mais pedidos e depois prosseguir para finalizar o pedido. Nessa hora, caso o usuário não tenha saldo o suficiente, o sistema emite um erro e o usuário pode voltar e remover um ou mais pedidos ou cancelar a compra e não realizar mais pedidos. Como poderíamos criar o diagrama de transição de estado?</p>
+                  <p>Primeiro precisamos definir os estados e transições presentes no enunciado:</p>
+                  <ul>
+                    <li><a style="font-weight:bold;">Estados:</a> Inicial, Realizando pedido, Compra finalizada, Emitir Erro, Compra cancelada.</li>
+                    <li><a style="font-weight:bold;">Transições:</a> Adicionar um prato, Saldo suficiente, Saldo insuficiente, Remover um prato e Cancelar o pedido.</li>
+                  </ul>
+                  <p>Agora, podemos iniciar a construção do diagrama. Primeiro, inserimos os estados. Repare que os estados finais são grifados. Depois inserimos as transições.</p>
 
-                
+
+                    <div style="text-align: center;">
+                      <img style="width: 70%;" src="img/banner/transicao-estado/grafo.png" class="img-fluid" alt="">
+                    </div>
+
+                  <p><br>Alguns critérios que podem ser utilizados para definir casos de teste:</p>
+                  <ul>
+                    <li>Percorrer todas as arestas.</li>
+                    <li>Percorrer todos os nós.</li>
+                    <li>Percorrer todos os possíveis caminhos.</li>
+                  </ul>
+
                 <div class="container">
                         
                         <table class="tg" width="70%;" align="center">
-                            <thead>
-                                <tr>
-                                  <th class="titulo" colspan="3"><span style="font-weight:bold">Roteiro de Testes: Validar Identificador</span></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="titulo">Caso de Teste</td>
-                                  <td class="titulo">Entrada</td>
-                                  <td class="titulo">Saída Esperada</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhacinza">CT-01</td>
-                                  <td class="linhacinza">teste1</td>
-                                  <td class="linhacinza">Indentificador Válido</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhabranca">CT-02</td>
-                                  <td class="linhabranca">a</td>
-                                  <td class="linhabranca">Identificador Inválido</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhacinza">CT-03</td>
-                                  <td class="linhacinza">3teste</td>
-                                  <td class="linhacinza">Identificador Inválido</td>
-                                </tr>
-                                <tr>
-                                  <td class="linhabranca">CT-04</td>
-                                  <td class="linhabranca">teste</td>
-                                  <td class="linhabranca">Identificador Inválido</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                </div>
-
-                <div class="section-header">
-                    <h2>EXERCICIO 1 - CONTA BANCÁRIA</h2>
-                </div>
-                    <p>O Newbank está desenvolvendo seu aplicativo em Python. Nele, seus clientes serão representados por instâncias da classe Conta.py que você pode baixar logo abaixo. Essa classe possui os métodos de Saque e Depósito.  Seu trabalho será elaborar casos de testes baseados na técnica de Particionamento de Equivalência e implementá-los e executá-los usando a biblioteca unittest disponível nas versões mais recentes do Python. A documentação do sistema está a seguir:</p>
-
-                    <a href="#" class="about-btn scrollto">Baixar Documentação do sistema</a>
-
-                <ul>
-                    <h5 style="font-weight:bold;">Orientação:</h5>
-                    <li>Para utilizar a unittest, basta dar um “import unittest” no começo do arquivo;</li>
-                    <li>Uma nova classe de teste deve ser criada, extendendo unittest.TestCase;</li>
-                    <li>Cada método dessa classe será um caso de teste. Certifique-se de identificá-los;</li>
-                    <li>mporte também a classe Conta.py e a instancie em cada caso de teste, com os respectivos valores;</li>
-                    <li>Ao final de cada caso de teste, utilize o metodo .assertEqual() para comparar o valor esperado com o recebido pela classe após o teste;</li>
-                    <li>Caso tenha mais dúvidas sobre a biblioteca unittest, verifique <a href="https://easychair.org/conferences/?conf=ejim2020">a documentação</a>;</li>
-                </ul>
-
-                <div class="section-header">
-                    <h2>RESOLUÇÃO</h2>
-                </div>
-
-                <p>Primeiramente, separamos as classes de equivalência, tanto para saque, quanto para saque, quanto para depósito: </p>
-                
-                <div id = "tabela">
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
+                          <thead>
                             <tr>
-                            <th class="titulo" style="font-weight:bold" colspan="3">Método Saque</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
-                            </tr>
-                            <tr>
-                            <td class="linhacinza">Saldo</td>
-                            <td class="linhacinza">Saldo &gt;= Quantia</td>
-                            <td class="linhacinza">Saldo &lt; Quantia</td>
-                            </tr>
-                            <tr>
-                            <td class="linhabranca">Quantia</td>
-                            <td class="linhabranca">Quantia &gt; 0</td>
-                            <td class="linhabranca">Quantia &lt;= 0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                        <tr>
-                            <th class="titulo" style="font-weight:bold" colspan="3">Método Depósito</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="titulo" style="font-weight:bold">Variáveis de Entrada</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Válidas</td>
-                            <td class="titulo" style="font-weight:bold">Classes de Equivalência Inválidas</td>
-                        </tr>
-                        <tr>
-                            <td class="linhacinza">Quantia</td>
-                            <td class="linhacinza">Quantia &gt; 0</td>
-                            <td class="linhacinza">Quantia &lt;= 0</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p><br>Em seguida, elaboramos os casos de teste para exercitar as classes válidas e inválidas, uma por vez:</p>
-                
-                <div id = "tabela">
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                          <tr>
-                            <th class="titulo" colspan="4" style="font-weight:bold">Método Saque</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="titulo"style="font-weight:bold">Casos de Teste</td>
-                            <td class="titulo"style="font-weight:bold">Condições iniciais</td>
-                            <td class="titulo"style="font-weight:bold">Entrada</td>
-                            <td class="titulo"style="font-weight:bold">Resultado Esperado</td>
-                          </tr>
-                          <tr>
-                            <td class="linhacinza">CT-01</td>
-                            <td class="linhacinza">Saldo: R$1,00</td>
-                            <td class="linhacinza">0,99</td>
-                            <td class="linhacinza">"Saque Realizado <br>com Sucesso!”</td>
-                          </tr>
-                          <tr>
-                            <td class="linhabranca">CT-02</td>
-                            <td class="linhabranca">Saldo: R$1,00</td>
-                            <td class="linhabranca">1,01</td>
-                            <td class="linhabranca">“Saldo Insuficiente”</td>
-                          </tr>
-                          <tr>
-                            <td class="linhacinza">CT-03</td>
-                            <td class="linhacinza">Saldo: R$1,00</td>
-                            <td class="linhacinza">-1</td>
-                            <td class="linhacinza">“Erro! Quantia<br>Inválida”</td>
-                          </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="tg" width="45%;" align="center">
-                        <thead>
-                            <tr>
-                              <th class="titulo" colspan="4" style="font-weight:bold">Método Depósito</th>
+                              <th class="titulo">CT</th>
+                              <th class="titulo">Entrada</th>
+                              <th class="titulo">Saída Esperada</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td class="titulo" style="font-weight:bold">Casos de Teste</td>
-                              <td class="titulo" style="font-weight:bold">Condições iniciais</td>
-                              <td class="titulo" style="font-weight:bold">Entrada</td>
-                              <td class="titulo" style="font-weight:bold">Resultado Esperado</td>
+                              <td class="linhacinza">01</td>
+                              <td class="linhacinza">Adicionar Prato, Adicionar Prato, Clicarem Finalizar com Saldo Insuficiente</td>
+                              <td class="linhacinza">Emissão de<br>Mensagem Erro</td>
                             </tr>
                             <tr>
-                              <td class="linhacinza">CT-04</td>
-                              <td class="linhacinza">Saldo: R$0,00</td>
-                              <td class="linhacinza">100,00</td>
-                              <td class="linhacinza">“Depósito Realizado com Sucesso</td>
+                              <td class="linhabranca">02</td>
+                              <td class="linhabranca">Adicionar Prato, Clicar em Finalizar com<br>Saldo Suficiente.</td>
+                              <td class="linhabranca">Emissão de<br>Mensagem de<br>Compra Finalizada</td>
                             </tr>
                             <tr>
-                              <td class="linhabranca">CT-05</td>
-                              <td class="linhabranca">Saldo: R$0,00</td>
-                              <td class="linhabranca">-1</td>
-                              <td class="linhabranca">“Erro! Quantia Inválida"</td>
+                              <td class="linhacinza">03</td>
+                              <td class="linhacinza">Adicionar Prato, Clicar em Finalizar com<br>Saldo Insuficiente, Clicar em Cancelar<br>Compra.</td>
+                              <td class="linhacinza">Voltar à Tela Principal</td>
+                            </tr>
+                            <tr>
+                              <td class="linhabranca">04</td>
+                              <td class="linhabranca">Adicionar Prato, Clicar em Finalizar com<br>Saldo insuficiente, Remover Prato,<br>Clicar em Finalizar com Saldo Suficiente.</td>
+                              <td class="linhabranca">Emissão de<br>Mensagem de<br>Compra Finalizada</td>
+                            </tr>
+                            <tr>
+                              <td class="linhacinza">05</td>
+                              <td class="linhacinza">Adicionar Prato, Clicar em Finalizar com<br>Saldo Insuficiente, Clicar em Cancelar<br>Compra, Adicionar Prato Clicar em<br>Finalizar com Saldo Suficiente.</td>
+                              <td class="linhacinza">Emissão de<br>Mensagem de<br>Compra Finalizada</td>
                             </tr>
                           </tbody>
-                    </table>
-                </div>
-                <div class="section-header">
-                    <h2>IMPLEMENTAÇÃO</h2>
-                </div>
-
-                <p>Nesta Seção mostramos o resultado dos testes realizados em cima do programa que foi fornecido. Você pode comparar a sua implementação de testes com a que será fornecida abaixo:</p>
-                
-                <div id="subscribe" style="text-align: center;">
-                    <button style="background-color: #E6984A;"><a href="https://drive.google.com/file/d/1SMXjfwAwZ_qiFF7s7D_CP-PZR-jokzUg/view?usp=sharing" class="about-btn scrollto" style= "color:#fff; font-weight:bold";>Baixar casos de teste automatizados</a></button>
-                </div>
-                
-                <p>Com a execução dos testes em PyUnit, chega-se nos seguintes resultados:</p>
-
-                <div class="container">
-                    <table class="tg" width="90%;" align="center">
-                        <thead>
-                            <tr>
-                              <th class="titulo" style="font-weight:bold">Casos de Teste</th>
-                              <th class="titulo" style="font-weight:bold">Condições iniciais</th>
-                              <th class="titulo" style="font-weight:bold">Entrada</th>
-                              <th class="titulo" style="font-weight:bold">Resultado Esperado</th>
-                              <th class="titulo" style="font-weight:bold">Resultado Obtido</th>
-                              <th class="titulo" style="font-weight:bold">Resultado dos Testes</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="linhacinza">CT-01</td>
-                              <td class="linhacinza">Saldo: R$1,00</td>
-                              <td class="linhacinza">0,99</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhabranca">CT-02</td>
-                              <td class="linhabranca">Saldo: R$1,00</td>
-                              <td class="linhabranca">1,01</td>
-                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
-                              <td class="linhabranca">“Erro! Saldo Insuficiente”</td>
-                              <td class="linhabranca">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhacinza">CT-03</td>
-                              <td class="linhacinza">Saldo: R$1,00</td>
-                              <td class="linhacinza">-1</td>
-                              <td class="linhacinza">"Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">“Saque Realizado com sucesso”</td>
-                              <td class="linhacinza">Falhou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhabranca">CT-04</td>
-                              <td class="linhabranca">Saldo: R$0,00</td>
-                              <td class="linhabranca">100,00</td>
-                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
-                              <td class="linhabranca">“Depósito Realizado com sucesso”</td>
-                              <td class="linhabranca">Passou</td>
-                            </tr>
-                            <tr>
-                              <td class="linhacinza">CT-05</td>
-                              <td class="linhacinza">Saldo: R$0,00</td>
-                              <td class="linhacinza">-1</td>
-                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">“Erro! Quantia Inválida”</td>
-                              <td class="linhacinza">Passou</td>
-                            </tr>
-                          </tbody>
-                    </table>
+                        </table>
                 </div>
                 <p><br></p>
-            </div>
-        </div>
+          </div>
         </section>
 
     </main>
