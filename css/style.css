@@ -141,6 +141,7 @@ h6 {
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 20px;
+  word-wrap: initial;
 }
 
 .section-header::before {
@@ -1915,5 +1916,15 @@ td, th {
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+  @media (max-width: 358px) {
+    .section-header h2{
+      font-size: 30px !important; 
+    }
+    .btn{
+      width: 80%;
+      font-size: 12px !important;
+      padding: 5px;
+    }
   }
 }

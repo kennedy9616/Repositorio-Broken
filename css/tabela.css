@@ -2,6 +2,7 @@
     border-collapse:collapse;
     border-color:#9ABAD9;
     border-spacing:0;
+    margin-bottom: 20px;
   }
 .tg td{
   background-color:#EBF5FF;
@@ -47,7 +48,8 @@
 .tg .linhabranca{background-color:#fefefe;
   border-width: 3px;
   border-color:#000000;
-  font-size:20px;text-align:center;
+  font-size:20px;
+  text-align:center;
   vertical-align:top;
 }
 .tg .linhaleft{
@@ -59,8 +61,13 @@
   vertical-align:top;
 }
 #tabela {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    overflow-x: auto;
+}
+.container-tabela{
+  overflow-x: auto;
 }
 @media (max-width: 1199px) {
     #tabela {
